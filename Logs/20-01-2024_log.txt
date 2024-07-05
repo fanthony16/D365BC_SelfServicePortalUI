@@ -1,0 +1,2 @@
+﻿20-01-2024 11:47:37 PM : NAV - SELF SERVICE PORTAL : Unable to cast object of type 'System.Collections.Generic.List`1[NAV_HR_WINDOW.AppraisalRequest]' to type 'System.Data.DataTable'.
+20-01-2024 11:47:39 PM : NAV - SELF SERVICE PORTAL : Conversion from type 'DataTable' to type 'String' is not valid.

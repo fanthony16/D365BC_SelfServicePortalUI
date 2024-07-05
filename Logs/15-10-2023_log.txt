@@ -1,0 +1,5 @@
+﻿15-10-2023 6:42:28 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+15-10-2023 7:00:36 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+15-10-2023 7:00:57 PM : NAV - SELF SERVICE PORTAL : Unable to cast object of type 'System.Collections.Generic.List`1[NAV_HR_WINDOW.AppraisalRequest]' to type 'System.Data.DataTable'.
+15-10-2023 7:01:10 PM : NAV - SELF SERVICE PORTAL : Unable to cast object of type 'System.Collections.Generic.List`1[NAV_HR_WINDOW.AppraisalRequest]' to type 'System.Data.DataTable'.
+15-10-2023 7:10:22 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.

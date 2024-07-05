@@ -1,0 +1,34 @@
+/*
+Template Name: Academic Education
+File: Layout CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+@import url('navi.css');
+@import url('forms.css');
+@import url('tables.css');
+@import url('homepage.css');
+@import url('gallery.css');
+@import url('portfolio.css');
+@import url('featured_slide.css');
+
+body{
+	margin:44px 0 0 0;
+	padding:0;
+	font-size:13px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#979797;
+	background-color:white;
+	}
+
+img {
+	border-style: none;
+	border-color: inherit;
+}
+
+img {
+	border-style: none;
+	height: 28px;
+}

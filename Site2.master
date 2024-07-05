@@ -1,0 +1,60 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/Site.master" AutoEventWireup="false" CodeFile="Site2.master.vb" Inherits="Site2" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" Runat="Server">
+    
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    
+    <div id="dvUploadDocument" class ="dvBoxRows">
+
+        <table style="width:100%; border-collapse:collapse; font:14px Arial,sans-serif;">
+        <tr>
+            <td colspan="3" style="padding:10px 20px; background-color:#acb3b9;">
+                <%--<h1 style="font-size:24px;">Welcome  Mr . </h1>--%>
+               
+                <asp:Label  id = "lblWelComePerson" Text="Welcome ." runat ="server" style="font-size:24px; color:black;"></asp:Label>
+
+                
+
+
+            </td>
+        </tr>
+        <tr style="height:170px;">
+            <td style="width:20%; padding:20px; background-color:#d4d7dc; vertical-align: top;">
+                <p>
+                    A self service solution that enable you do more in a very cost effective way, 
+while also increasing business process efficiencies. 
+
+                   
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                     Contact Details:<br />
+                    Email : info@reeltechsolutions.com<br />
+                    Phone : +234-8011-222-333
+                </p>
+                <%--<ul style="list-style:none; padding:0px; line-height:24px;">
+                    <li><a href="#" style="color:#333;">Home</a></li>
+                    <li><a href="#" style="color:#333;">About</a></li>
+                    <li><a href="#" style="color:#333;">Contact</a></li>
+                </ul>--%>
+            </td>
+            <td style="padding:20px; background-color:#f2f2f2; vertical-align:top;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+            </td>
+
+             
+
+        </tr>
+            
+        <tr>
+            <td  colspan="3" style="padding:5px; background-color:#acb3b9; text-align:center;">
+                <p>copyright &copy; reeltechsolutions.com</p>
+            </td>
+        </tr>
+    </table>
+
+    </div>
+
+</asp:Content>
+
+

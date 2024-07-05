@@ -1,0 +1,7 @@
+﻿06-10-2023 7:36:57 PM : NAV - SELF SERVICE PORTAL : Conversion from string "" to type 'Date' is not valid.
+06-10-2023 7:44:34 PM : NAV - SELF SERVICE PORTAL : Conversion from string "" to type 'Date' is not valid.
+06-10-2023 7:45:12 PM : NAV - SELF SERVICE PORTAL : Unable to cast object of type 'System.Collections.Generic.List`1[NAV_HR_WINDOW.AppraisalRequest]' to type 'System.Data.DataTable'.
+06-10-2023 7:45:13 PM : NAV - SELF SERVICE PORTAL : Conversion from type 'DataTable' to type 'String' is not valid.
+06-10-2023 7:46:02 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+06-10-2023 8:04:28 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+06-10-2023 8:07:00 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.

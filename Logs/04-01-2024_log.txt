@@ -1,0 +1,14 @@
+﻿04-01-2024 2:50:23 AM : NAV - SELF SERVICE PORTAL : Unable to cast object of type 'System.Collections.Generic.List`1[NAV_HR_WINDOW.AppraisalRequest]' to type 'System.Data.DataTable'.
+04-01-2024 2:50:24 AM : NAV - SELF SERVICE PORTAL : Conversion from type 'DataTable' to type 'String' is not valid.
+04-01-2024 11:13:34 PM : NAV - SELF SERVICE PORTAL : There is no row at position 0.
+04-01-2024 11:13:36 PM : NAV - SELF SERVICE PORTAL : There is no row at position 0.
+04-01-2024 11:14:18 PM : NAV - SELF SERVICE PORTAL : There is no row at position 0.
+04-01-2024 11:14:18 PM : NAV - SELF SERVICE PORTAL : There is no row at position 0.
+04-01-2024 11:14:59 PM : NAV - SELF SERVICE PORTAL : There is no row at position 0.
+04-01-2024 11:15:12 PM : NAV - SELF SERVICE PORTAL : There is no row at position 0.
+04-01-2024 11:15:54 PM : NAV - SELF SERVICE PORTAL : There is no row at position 0.
+04-01-2024 11:15:59 PM : NAV - SELF SERVICE PORTAL : There is no row at position 0.
+04-01-2024 11:15:59 PM : NAV - SELF SERVICE PORTAL : There is no row at position 0.
+04-01-2024 11:15:59 PM : NAV - SELF SERVICE PORTAL : Conversion from type 'DataTable' to type 'String' is not valid.
+04-01-2024 11:16:00 PM : NAV - SELF SERVICE PORTAL : There is no row at position 0.
+04-01-2024 11:17:13 PM : NAV - SELF SERVICE PORTAL : Conversion from type 'DataTable' to type 'String' is not valid.

@@ -1,0 +1,46 @@
+﻿08-12-2023 4:23:10 AM : NAV - SELF SERVICE PORTAL : Input string was not in a correct format.Couldn't store <Test> in numNet_Amount Column.  Expected type is Decimal.
+08-12-2023 4:23:59 AM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 11:42:23 AM : NAV - SELF SERVICE PORTAL : A field or property with the name 'txtKey' was not found on the selected data source.
+08-12-2023 11:45:14 AM : NAV - SELF SERVICE PORTAL : Unable to cast object of type 'System.Collections.Generic.List`1[NAV_HR_WINDOW.AppraisalRequest]' to type 'System.Data.DataTable'.
+08-12-2023 11:45:16 AM : NAV - SELF SERVICE PORTAL : Conversion from type 'DataTable' to type 'String' is not valid.
+08-12-2023 11:46:55 AM : NAV - SELF SERVICE PORTAL : A field or property with the name 'txtKey' was not found on the selected data source.
+08-12-2023 11:58:56 AM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 11:59:44 AM : NAV - SELF SERVICE PORTAL : Column 'txtKey' does not belong to table Table1.
+08-12-2023 11:59:48 AM : NAV - SELF SERVICE PORTAL : Column 'txtKey' does not belong to table Table1.
+08-12-2023 11:59:54 AM : NAV - SELF SERVICE PORTAL : Column 'txtKey' does not belong to table Table1.
+08-12-2023 11:59:55 AM : NAV - SELF SERVICE PORTAL : Column 'txtKey' does not belong to table Table1.
+08-12-2023 12:00:01 PM : NAV - SELF SERVICE PORTAL : Column 'txtKey' does not belong to table Table1.
+08-12-2023 12:01:49 PM : NAV - SELF SERVICE PORTAL : Column 'txtKey' does not belong to table Table1.
+08-12-2023 12:04:28 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 12:05:44 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 12:06:44 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 12:11:48 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 12:14:49 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 12:18:42 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 12:19:27 PM : NAV - SELF SERVICE PORTAL : Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+08-12-2023 12:22:25 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 12:58:37 PM : NAV - SELF SERVICE PORTAL : Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+08-12-2023 1:11:24 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 1:12:15 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 1:27:22 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 1:29:13 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 1:30:04 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 1:43:00 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 1:57:05 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 1:57:05 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 2:05:50 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 2:13:20 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 2:28:50 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 2:38:45 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 2:41:45 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 2:43:43 PM : NAV - SELF SERVICE PORTAL : Unable to cast object of type 'System.Collections.Generic.List`1[NAV_HR_WINDOW.AppraisalRequest]' to type 'System.Data.DataTable'.
+08-12-2023 2:43:44 PM : NAV - SELF SERVICE PORTAL : Conversion from type 'DataTable' to type 'String' is not valid.
+08-12-2023 2:45:15 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 2:46:38 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 2:47:31 PM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+08-12-2023 3:41:59 PM : NAV - SELF SERVICE PORTAL : Conversion from type 'DataTable' to type 'String' is not valid.
+08-12-2023 3:43:56 PM : NAV - SELF SERVICE PORTAL : Unable to cast object of type 'System.Collections.Generic.List`1[NAV_HR_WINDOW.AppraisalRequest]' to type 'System.Data.DataTable'.
+08-12-2023 3:56:00 PM : NAV - SELF SERVICE PORTAL : Unable to cast object of type 'System.Collections.Generic.List`1[NAV_HR_WINDOW.AppraisalRequest]' to type 'System.Data.DataTable'.
+08-12-2023 3:56:02 PM : NAV - SELF SERVICE PORTAL : Conversion from type 'DataTable' to type 'String' is not valid.

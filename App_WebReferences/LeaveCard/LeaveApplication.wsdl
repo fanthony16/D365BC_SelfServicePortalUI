@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="urn:microsoft-dynamics-schemas/page/leaveapplication" targetNamespace="urn:microsoft-dynamics-schemas/page/leaveapplication" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="urn:microsoft-dynamics-schemas/page/leaveapplication" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:simpleType name="Status">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="New" />
+          <xsd:enumeration value="Pending_Approval" />
+          <xsd:enumeration value="HOD_Approval" />
+          <xsd:enumeration value="HR_Approval" />
+          <xsd:enumeration value="MDApproval" />
+          <xsd:enumeration value="Rejected" />
+          <xsd:enumeration value="Canceled" />
+          <xsd:enumeration value="Approved" />
+          <xsd:enumeration value="On_leave" />
+          <xsd:enumeration value="Resumed" />
+          <xsd:enumeration value="Posted" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="HR_Leave_Reliver_SubForm">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="Key" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Application_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Reliver_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Reliver_Name" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="HR_Leave_Reliver_SubForm_List">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="unbounded" name="HR_Leave_Reliver_SubForm" type="tns:HR_Leave_Reliver_SubForm" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LeaveApplication">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="Key" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Application_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Responsibility_Center" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Employee_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="EmpName" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Job_Tittle" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="EmpJobDesc" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="EmpDept" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Supervisor" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="SupervisorName" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Supervisor_Email" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Leave_Period" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Leave_Type" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Start_Date" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Days_Applied" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Return_Date" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Approved_days" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="dEarnd" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Total_Annual_Leave" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Total_Leave_Days_Allw" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="LeaveBalance" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ExamLeaveBal" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="New_Entry_Max_Annual_Days" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Maximum_Leave_Days" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="dTaken" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="dLeft" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Application_Date" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Request_Leave_Allowance" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Leave_Allowance_Amount" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Payroll_Period" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Reliever" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Reliever_Name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Attachments" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Status" type="tns:Status" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Cell_Phone_Number" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="E_mail_Address" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Details_of_Examination" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Date_of_Exam" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Number_of_Previous_Attempts" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="isApprovalSent" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="HR_Leave_Reliver_SubForm" type="tns:HR_Leave_Reliver_SubForm_List" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LeaveApplication_List">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="unbounded" name="LeaveApplication" type="tns:LeaveApplication" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="LeaveApplication_Fields">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Application_Code" />
+          <xsd:enumeration value="Responsibility_Center" />
+          <xsd:enumeration value="Employee_No" />
+          <xsd:enumeration value="EmpName" />
+          <xsd:enumeration value="Job_Tittle" />
+          <xsd:enumeration value="EmpJobDesc" />
+          <xsd:enumeration value="EmpDept" />
+          <xsd:enumeration value="Supervisor" />
+          <xsd:enumeration value="SupervisorName" />
+          <xsd:enumeration value="Supervisor_Email" />
+          <xsd:enumeration value="Leave_Period" />
+          <xsd:enumeration value="Leave_Type" />
+          <xsd:enumeration value="Start_Date" />
+          <xsd:enumeration value="Days_Applied" />
+          <xsd:enumeration value="Return_Date" />
+          <xsd:enumeration value="Approved_days" />
+          <xsd:enumeration value="dEarnd" />
+          <xsd:enumeration value="Total_Annual_Leave" />
+          <xsd:enumeration value="Total_Leave_Days_Allw" />
+          <xsd:enumeration value="LeaveBalance" />
+          <xsd:enumeration value="ExamLeaveBal" />
+          <xsd:enumeration value="New_Entry_Max_Annual_Days" />
+          <xsd:enumeration value="Maximum_Leave_Days" />
+          <xsd:enumeration value="dTaken" />
+          <xsd:enumeration value="dLeft" />
+          <xsd:enumeration value="Application_Date" />
+          <xsd:enumeration value="Request_Leave_Allowance" />
+          <xsd:enumeration value="Leave_Allowance_Amount" />
+          <xsd:enumeration value="Payroll_Period" />
+          <xsd:enumeration value="Reliever" />
+          <xsd:enumeration value="Reliever_Name" />
+          <xsd:enumeration value="Attachments" />
+          <xsd:enumeration value="Status" />
+          <xsd:enumeration value="Cell_Phone_Number" />
+          <xsd:enumeration value="E_mail_Address" />
+          <xsd:enumeration value="Details_of_Examination" />
+          <xsd:enumeration value="Date_of_Exam" />
+          <xsd:enumeration value="Number_of_Previous_Attempts" />
+          <xsd:enumeration value="isApprovalSent" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="LeaveApplication_Filter">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="Field" type="tns:LeaveApplication_Fields" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Criteria" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Read">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Application_Code" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Read_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="LeaveApplication" type="tns:LeaveApplication" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadByRecId">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="recId" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadByRecId_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="LeaveApplication" type="tns:LeaveApplication" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadMultiple">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="unbounded" name="filter" type="tns:LeaveApplication_Filter" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="bookmarkKey" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="setSize" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadMultiple_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="ReadMultiple_Result" type="tns:LeaveApplication_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="IsUpdated">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Key" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="IsUpdated_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="IsUpdated_Result" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRecIdFromKey">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Key" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRecIdFromKey_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="GetRecIdFromKey_Result" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Create">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="LeaveApplication" type="tns:LeaveApplication" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Create_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="LeaveApplication" type="tns:LeaveApplication" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateMultiple">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="LeaveApplication_List" type="tns:LeaveApplication_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateMultiple_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="LeaveApplication_List" type="tns:LeaveApplication_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Update">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="LeaveApplication" type="tns:LeaveApplication" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Update_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="LeaveApplication" type="tns:LeaveApplication" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateMultiple">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="LeaveApplication_List" type="tns:LeaveApplication_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateMultiple_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="LeaveApplication_List" type="tns:LeaveApplication_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Delete_HR_Leave_Reliver_SubForm">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="HR_Leave_Reliver_SubForm_Key" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Delete_HR_Leave_Reliver_SubForm_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Delete_HR_Leave_Reliver_SubForm_Result" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="Read">
+    <part name="parameters" element="tns:Read" />
+  </message>
+  <message name="Read_Result">
+    <part name="parameters" element="tns:Read_Result" />
+  </message>
+  <message name="ReadByRecId">
+    <part name="parameters" element="tns:ReadByRecId" />
+  </message>
+  <message name="ReadByRecId_Result">
+    <part name="parameters" element="tns:ReadByRecId_Result" />
+  </message>
+  <message name="ReadMultiple">
+    <part name="parameters" element="tns:ReadMultiple" />
+  </message>
+  <message name="ReadMultiple_Result">
+    <part name="parameters" element="tns:ReadMultiple_Result" />
+  </message>
+  <message name="IsUpdated">
+    <part name="parameters" element="tns:IsUpdated" />
+  </message>
+  <message name="IsUpdated_Result">
+    <part name="parameters" element="tns:IsUpdated_Result" />
+  </message>
+  <message name="GetRecIdFromKey">
+    <part name="parameters" element="tns:GetRecIdFromKey" />
+  </message>
+  <message name="GetRecIdFromKey_Result">
+    <part name="parameters" element="tns:GetRecIdFromKey_Result" />
+  </message>
+  <message name="Create">
+    <part name="parameters" element="tns:Create" />
+  </message>
+  <message name="Create_Result">
+    <part name="parameters" element="tns:Create_Result" />
+  </message>
+  <message name="CreateMultiple">
+    <part name="parameters" element="tns:CreateMultiple" />
+  </message>
+  <message name="CreateMultiple_Result">
+    <part name="parameters" element="tns:CreateMultiple_Result" />
+  </message>
+  <message name="Update">
+    <part name="parameters" element="tns:Update" />
+  </message>
+  <message name="Update_Result">
+    <part name="parameters" element="tns:Update_Result" />
+  </message>
+  <message name="UpdateMultiple">
+    <part name="parameters" element="tns:UpdateMultiple" />
+  </message>
+  <message name="UpdateMultiple_Result">
+    <part name="parameters" element="tns:UpdateMultiple_Result" />
+  </message>
+  <message name="Delete_HR_Leave_Reliver_SubForm">
+    <part name="parameters" element="tns:Delete_HR_Leave_Reliver_SubForm" />
+  </message>
+  <message name="Delete_HR_Leave_Reliver_SubForm_Result">
+    <part name="parameters" element="tns:Delete_HR_Leave_Reliver_SubForm_Result" />
+  </message>
+  <portType name="LeaveApplication_Port">
+    <operation name="Read">
+      <input name="Read" message="tns:Read" />
+      <output name="Read_Result" message="tns:Read_Result" />
+    </operation>
+    <operation name="ReadByRecId">
+      <input name="ReadByRecId" message="tns:ReadByRecId" />
+      <output name="ReadByRecId_Result" message="tns:ReadByRecId_Result" />
+    </operation>
+    <operation name="ReadMultiple">
+      <input name="ReadMultiple" message="tns:ReadMultiple" />
+      <output name="ReadMultiple_Result" message="tns:ReadMultiple_Result" />
+    </operation>
+    <operation name="IsUpdated">
+      <input name="IsUpdated" message="tns:IsUpdated" />
+      <output name="IsUpdated_Result" message="tns:IsUpdated_Result" />
+    </operation>
+    <operation name="GetRecIdFromKey">
+      <input name="GetRecIdFromKey" message="tns:GetRecIdFromKey" />
+      <output name="GetRecIdFromKey_Result" message="tns:GetRecIdFromKey_Result" />
+    </operation>
+    <operation name="Create">
+      <input name="Create" message="tns:Create" />
+      <output name="Create_Result" message="tns:Create_Result" />
+    </operation>
+    <operation name="CreateMultiple">
+      <input name="CreateMultiple" message="tns:CreateMultiple" />
+      <output name="CreateMultiple_Result" message="tns:CreateMultiple_Result" />
+    </operation>
+    <operation name="Update">
+      <input name="Update" message="tns:Update" />
+      <output name="Update_Result" message="tns:Update_Result" />
+    </operation>
+    <operation name="UpdateMultiple">
+      <input name="UpdateMultiple" message="tns:UpdateMultiple" />
+      <output name="UpdateMultiple_Result" message="tns:UpdateMultiple_Result" />
+    </operation>
+    <operation name="Delete_HR_Leave_Reliver_SubForm">
+      <input name="Delete_HR_Leave_Reliver_SubForm" message="tns:Delete_HR_Leave_Reliver_SubForm" />
+      <output name="Delete_HR_Leave_Reliver_SubForm_Result" message="tns:Delete_HR_Leave_Reliver_SubForm_Result" />
+    </operation>
+  </portType>
+  <binding name="LeaveApplication_Binding" type="tns:LeaveApplication_Port">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="Read">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/leaveapplication:Read" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Read">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Read_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ReadByRecId">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/leaveapplication:ReadByRecId" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ReadByRecId">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ReadByRecId_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ReadMultiple">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/leaveapplication:ReadMultiple" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ReadMultiple">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ReadMultiple_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="IsUpdated">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/leaveapplication:IsUpdated" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="IsUpdated">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="IsUpdated_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetRecIdFromKey">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/leaveapplication:GetRecIdFromKey" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetRecIdFromKey">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetRecIdFromKey_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Create">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/leaveapplication:Create" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Create">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Create_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreateMultiple">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/leaveapplication:CreateMultiple" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreateMultiple">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreateMultiple_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Update">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/leaveapplication:Update" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Update">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Update_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="UpdateMultiple">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/leaveapplication:UpdateMultiple" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="UpdateMultiple">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="UpdateMultiple_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Delete_HR_Leave_Reliver_SubForm">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/leaveapplication:Delete_HR_Leave_Reliver_SubForm" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Delete_HR_Leave_Reliver_SubForm">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Delete_HR_Leave_Reliver_SubForm_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="LeaveApplication_Service">
+    <port name="LeaveApplication_Port" binding="tns:LeaveApplication_Binding">
+      <address location="http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/LeaveApplication" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>

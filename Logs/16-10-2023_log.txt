@@ -1,0 +1,6 @@
+﻿16-10-2023 8:42:33 AM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+16-10-2023 8:47:49 AM : NAV - SELF SERVICE PORTAL : Conversion from string "" to type 'Date' is not valid.
+16-10-2023 8:47:54 AM : NAV - SELF SERVICE PORTAL : Conversion from string "" to type 'Date' is not valid.
+16-10-2023 8:48:01 AM : NAV - SELF SERVICE PORTAL : Conversion from string "" to type 'Date' is not valid.
+16-10-2023 8:48:48 AM : NAV - SELF SERVICE PORTAL : Thread was being aborted.
+16-10-2023 9:03:24 AM : NAV - SELF SERVICE PORTAL : Thread was being aborted.

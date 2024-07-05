@@ -1,0 +1,74 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeFile="Site.Master.vb" Inherits="Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+     <link rel="stylesheet" href="~/styles/layout.css" type="text/css"/>  
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body style ="background-color:white ;">
+    <form runat="server">
+        
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true" />
+<div class="" style ="width :1450px; margin-left :30px;">
+            <div style=" float:left;  height:150px;width:300px; padding:0px; "><img alt="" src="images/HR MANAGEMENT1.jpg" style=" width :100%; height :100%"/>
+                 
+
+
+            </div>
+            <div style=" height:30px;width:20px; float :left ;"></div>
+            <div style=" float:left; height:auto;width:1000px;">
+                
+                <div id="dvMenuSp" style ="height :110px; text-align :right; padding-right :0px; " ><img alt="" src="images/LeadWayLogo.png" style=""/></div>
+                
+               <%-- <div id="Div1" style =" text-align :right; padding-right :0px; " >
+                 
+                        <asp:ImageButton ID="btnLogOut" runat="server" ToolTip="Log Out" ImageUrl="~/images/logout.png" ValidationGroup="logOut" /></div>--%>
+
+                <div id="dvMenu" style="text-align :right;  padding :2px 0px 0px 10px;">
+
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+
+                    <Items>
+                        
+                        <asp:MenuItem NavigateUrl="~/Index.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Log-Out" Value="Log-Out"></asp:MenuItem>
+
+                        
+                      
+                    </Items>
+                    
+                </asp:Menu>
+
+                </div>
+
+            </div>
+            </div>  
+
+
+          
+            
+<div class="DivContent" style="width:1450px;">
+
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+    </form>
+</body>
+</html>
